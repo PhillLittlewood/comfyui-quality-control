@@ -65,8 +65,12 @@ Presets are loaded dynamically from `presets.json` located in the root folder. Y
 
 ```json
 {
-  "Image Physics & Anatomy Check": "Evaluate the image asset for severe physical violations, anatomical errors, perspective distortion, or major structural rendering artifacts.",
-  "Video Temporal Stability Check": "Evaluate the keyframe sequence for temporal instability, floating objects, gravity violations, clipping geometry, or sudden morphing topologies across frames."
+  "Image Physics & Anatomy Check": "Evaluate the image asset for severe physical violations, anatomical errors (such as extra or warped fingers/limbs), perspective distortion, or major structural rendering artifacts. Be reasonably lenient with artistic styling and intentional surrealism.",
+  "Video Temporal Stability Check": "Evaluate the keyframe sequence for temporal instability, floating objects, gravity violations, clipping geometry, or sudden morphing topologies across frames.",
+  "Text & Spelling Check": "Examine the image or video frames for any rendered text, signs, labels, or captions. Check them carefully for spelling mistakes, gibberish characters, typos, or malformed letters, and report any errors found.",
+  "Image Physics + Spelling": "Evaluate the image asset for severe physical violations, anatomical errors (such as extra or warped fingers/limbs), perspective distortion, or major structural rendering artifacts. Be reasonably lenient with artistic styling and intentional surrealism. Examine the image or video frames for any rendered text, signs, labels, or captions. Check them carefully for spelling mistakes, gibberish characters, typos, or malformed letters, and report any errors found.",
+  "Video Checks + Spelling": "Evaluate the keyframe sequence for temporal instability, floating objects, gravity violations, clipping geometry, or sudden morphing topologies across frames. Examine the image or video frames for any rendered text, signs, labels, or captions. Check them carefully for spelling mistakes, gibberish characters, typos, or malformed letters, and report any errors found."
+
 }
 ```
 
